@@ -42,14 +42,14 @@ class RawResponseDemo implements
                                 <a href='/viacheslavv-controller-demos/foobar_responsedemo/redirectresponsedemo' target='_blank'>Redirect_ResponseDemo</a>
                             </li>
                             <li>
-                                <a href='/viacheslavv-controller-demos/foobar_responsedemo/forwardresponsedemo' target='_blank'>Forward_ResponseDemo</a>
+                                <a href='/viacheslavv-controller-demos/foobar_responsedemo/forwardresponsedemo'>Forward_ResponseDemo</a>
                             </li>
                         </ul>
                         <form method="get" action="/viacheslavv-controller-demos/foobar_responsedemo/jsonresponsedemo">
-                        <input type="text" name="vendor_name"><br><br>
-                        <input type="text" name="module_name"><br><br>
-                        <button type="submit">Send</button>
-                    </form>
+                            <input type="text" name="vendor_name" value="ViacheslavV"><br><br>
+                            <input type="text" name="module_name" value="ViacheslavV_ControllerDemos"><br><br>
+                            <button type="submit">Send</button>
+                        </form>
                     </body>
                     </html>
 
