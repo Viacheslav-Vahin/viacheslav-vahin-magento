@@ -1,0 +1,17 @@
+<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+<ul>
+    <li>
+        <a href="<?= $block->getUrl('viacheslavv-controller-demos/foobar_responsedemo/redirectresponsedemo') ?>" target="_blank">RedirectResponseDemo</a>
+    </li>
+    <li>
+        <a href="<?= $block->getUrl('viacheslavv-controller-demos/foobar_responsedemo/resultsresponsedemo', ['vendor_name' => 'ViacheslavV', 'module_name' => 'ControllerDemos']) ?>">JsonResponseDemo</a>
+    </li>
+    <li>
+        <a href="<?= $block->getUrl('viacheslavv-controller-demos/foobar_responsedemo/forwardresponsedemo', ['vendor_name' => 'ViacheslavV', 'module_name' => 'ControllerDemos']) ?>">ForwardResponseDemo</a>
+    </li>
+</ul>
+<form method="GET" action="<?= $block->getUrl('viacheslavv-controller-demos/foobar_responsedemo/resultsresponsedemo') ?>">
+    <input type="text" name="vendor_name" value="ViacheslavV"><br><br>
+    <input type="text" name="module_name" value="ControllerDemos"><br><br>
+    <button type="submit">Send</button>
+</form>
