@@ -55,6 +55,7 @@ atlassian*
 !/pub/media/theme_customization/.htaccess
 /pub/media/tmp/*
 !/pub/media/tmp/.htaccess
+!/pub/media/wysiwyg/fd5a9b70e3b9385b7496357cf4de1981.jpg
 /pub/media/captcha/*
 /pub/media/sitemap/*
 !/pub/media/sitemap/.htaccess
