@@ -1,4 +1,10 @@
-<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+?>
 
-<p>Vendor - <?= $block->getRequest()->getParam('vendor_name') ?></p>
-<p>Module - <?= $block->getRequest()->getParam('module_name') ?></p>
+<p><?= $escaper->escapeHtml(__('Vendor - ')), $escaper->escapeHtml($block->getRequest()->getParam('vendor_name')) ?></p>
+<p><?= $escaper->escapeHtml(__('Module - ')), $escaper->escapeHtml($block->getRequest()->getParam('module_name')) ?></p>
