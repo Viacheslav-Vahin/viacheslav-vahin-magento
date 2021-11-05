@@ -1,0 +1,7 @@
+<?php /** @var \Magento\Framework\View\Element\Template $block */ ?>
+<?php /** @var \Magento\Framework\Escaper $escaper */ ?>
+<div class="error message" style="clear:both">
+    <div>
+        <?= $escaper->escapeHtml($block->getData('demo_product_message')) ?>
+    </div>
+</div>
