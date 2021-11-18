@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <body>
+        <referenceContainer name="main">
+            <block class="ViacheslavV\RegularCustomer\Block\Product\View\RegularCustomerRequest"
+                   name="viacheslavv.regular.customer.form"
+                   template="ViacheslavV_RegularCustomer::catalog/product/view/discount/regular_customer_request.phtml"
+                   before="product.info.details"
+            >
+                <arguments>
+                    <argument name="cache_lifetime" xsi:type="number">84600</argument>
+                    <argument name="request_submit_url"
+                              path="viacheslavv_regular_customer/index/request"
+                              xsi:type="url"
+                    />
+                </arguments>
+                <block class="Magento\Cms\Block\Block" name="viacheslavv.regular.customer.message">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">description_loyalty</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
