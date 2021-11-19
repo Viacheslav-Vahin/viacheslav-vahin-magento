@@ -17,9 +17,6 @@ class Form implements \Magento\Framework\App\Action\HttpGetActionInterface
         $this->pageFactory = $pageFactory;
     }
 
-
-
-
     /**
      * @return Page
      */
