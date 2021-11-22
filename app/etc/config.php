@@ -364,8 +364,9 @@ return [
         'Vertex_RequestLogging' => 1,
         'Vertex_AddressValidation' => 1,
         'ViacheslavV_Catalog' => 1,
-        'ViacheslavV_ControllerDemos' => 1,
         'ViacheslavV_Cms' => 1,
+        'ViacheslavV_ControllerDemos' => 1,
+        'ViacheslavV_RegularCustomer' => 1,
         'Yotpo_Yotpo' => 1
     ]
 ];
