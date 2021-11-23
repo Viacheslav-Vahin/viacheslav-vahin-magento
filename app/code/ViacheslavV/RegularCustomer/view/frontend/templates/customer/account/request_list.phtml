@@ -1,0 +1,20 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ * @var \Magento\Framework\View\Helper\SecureHtmlRenderer $secureRenderer
+ */
+/** @var \ViacheslavV\RegularCustomer\ViewModel\Customer\RequestList $viewModel */
+$viewModel = $block->getData('view_model');
+?>
+<ul>
+    <?php /** @var \ViacheslavV\RegularCustomer\Model\RegularCustomerRequest $regularCustomerRequest */ ?>
+    <?php foreach ($viewModel->getRegularCustomerRequestCollection() as $regularCustomerRequest): ?>
+        <?php $product = $viewModel->getProduct((int) $regularCustomerRequest->getProductId()); ?>
+        <li>
+            <span><?= $escaper->escapeHtml(__('Requested product: %1', $product ? $product->getName() : '-')) ?></span>
+            <br/>
+            <span><?= $escaper->escapeHtml(__('Message: %1', $regularCustomerRequest->getMessage())) ?></span>
+        </li>
+    <?php endforeach; ?>
+</ul>
