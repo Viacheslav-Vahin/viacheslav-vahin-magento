@@ -7,6 +7,9 @@ use Magento\Framework\View\Result\Page;
 
 class Form implements \Magento\Framework\App\Action\HttpGetActionInterface
 {
+    /**
+     * @var \Magento\Framework\View\Result\PageFactory $pageFactory
+     */
     private \Magento\Framework\View\Result\PageFactory $pageFactory;
 
     /**
@@ -18,6 +21,8 @@ class Form implements \Magento\Framework\App\Action\HttpGetActionInterface
     }
 
     /**
+     * Render regular customer form
+     *
      * @return Page
      */
     public function execute(): Page
