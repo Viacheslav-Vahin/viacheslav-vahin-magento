@@ -122,6 +122,13 @@
     Options +FollowSymLinks
     RewriteEngine on
 
+ # Development
+    SetEnvIf Host .*viacheslav-vahin-magento-local.allbugs.info.* MAGE_RUN_CODE=default
+    SetEnvIf Host .*viacheslav-vahin-magento-local.allbugs.info.* MAGE_RUN_TYPE=store
+    SetEnvIf Host .*viacheslav-vahin-magento-us.allbugs.info.* MAGE_RUN_CODE=us_store_view
+    SetEnvIf Host .*viacheslav-vahin-magento-us.allbugs.info.* MAGE_RUN_TYPE=store
+
+    # Production
     SetEnvIf Host .*viacheslav-vahin-magento.local.* MAGE_RUN_CODE=default
     SetEnvIf Host .*viacheslav-vahin-magento.local.* MAGE_RUN_TYPE=store
     SetEnvIf Host .*viacheslav-vahin-magento.us.* MAGE_RUN_CODE=us_store_view
