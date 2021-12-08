@@ -5,6 +5,8 @@
 /.settings
 /.vscode
 /auth.json
+/build.sh
+/deploy.sh
 atlassian*
 /nbproject
 /robots.txt
