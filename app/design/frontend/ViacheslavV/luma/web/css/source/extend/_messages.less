@@ -1,4 +1,19 @@
 //  Messages
+& when (@media-common = true) {
+    .message.error {
+        .lib-css(font-weight, @font-weight__bold);
+
+        a {
+            .lib-css(text-decoration, @link__hover__text-decoration);
+        }
+    }
+
+    .message.warning {
+        a {
+            .lib-css(text-decoration, @link__hover__text-decoration);
+        }
+    }
+}
 
 //  Information message
 @message-info__color: @color-white;
